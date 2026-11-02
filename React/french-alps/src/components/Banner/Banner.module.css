@@ -1,0 +1,9 @@
+.header {
+    text-align: right;
+    border-bottom: 1px solid brown;
+}
+
+.img {
+    width: 64px;
+    height: 64px;
+}
