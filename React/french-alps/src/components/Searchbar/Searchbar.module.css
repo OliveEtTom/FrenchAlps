@@ -1,0 +1,11 @@
+.header {
+    color: blue;
+    border-bottom: 1px solid brown;
+    display: flex;
+    vertical-align: center;
+}
+
+.span {
+    margin: 5px;
+    vertical-align: center;
+}

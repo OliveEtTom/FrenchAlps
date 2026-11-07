@@ -1,4 +1,5 @@
 import { destinationList } from "../../data/DestinationList";
+import Destination from "../Destination/Destination";
 import styles from "./DestinationList.module.css"
 const DestinationList = () => {
     return (
@@ -7,17 +8,12 @@ const DestinationList = () => {
             <ul className={styles.ul}>
                 {destinationList.map(({ id, name, location, altitude }) => (
                     <div key={id}>
-                        <li>
-                            <ul className={styles.ul}>
-                                <li>{name}</li>
-                                <li>{location}</li>
-                                <li>{altitude}</li>
-                            </ul>
-                        </li>
+                        <Destination name={name} location={location} altitude={altitude} />
                     </div>
-                ))}
-            </ul>
-        </div>
+                ))
+                }
+            </ul >
+        </div >
     )
 }
 
